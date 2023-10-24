@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Formulario</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Datos del Formulario</legend>
+        <label for="name">Nombre: </label>
+        <input id="name" name="nombre" value="Nombre" placeholder="Nombre" type="text"></input>
+        <br /><br />
+        <label for="nationality">Nacionalidad: </label>
+        <select id="nationality" name="country">
+            <option selected value="spain">Española</option>
+            <option value="french">Francesa</option>
+            <option value="english">Inglesa</option>
+            <option value="italian">Italiana</option>
+        </select>
+        <br /><br /><br />
+        <label for="infoInteres">Información de interés que quiera añadir</label>
+        <br>
+        <textarea id="infoInteres" rows="5" cols="100" maxlength="10" placeholder="Inserte aquí el texto"></textarea>
+        <br><br>
+        <button type="submit" name="botonEnviar" value="Enviar" disbled>Enviar</button>
+        <br><br>
+        <input type="checkbox" id="cbox1" value="accept" checked><label for="cbox1">Acepto
+            los términos y condiciones</label><br>
+
+        <label>Sexo:</label><input id="nombre" type="radio" name="sexo" value="hombre"/>
+        <label for="hombre">hombre</label><input id="mujer" type="radio" name="sexo" value="mujer"/>
+        <label for="mujer">mujer</label>
+
+    </fieldset>
+</body>
+</html>

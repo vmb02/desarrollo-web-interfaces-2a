@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+</head>
+<body>
+
+    <h1>Índice</h1>
+
+    <h2>Sobre mí</h2>
+    <p>Mi nombre es <b>Víctor Moreno</b>, soy una persona <i>extrovertida</i>, con mucho <i>sentido del humor</i> y con <u>don de gentes.</u></p>
+    <p>Tengo una hermana <i>(Isabel)</i>, una perra <i>(Linda)</i> y una gata <i>(Lola).</i></p>
+    <p>Mis aficiones son la <b>fotografía</b>, la <b>Semana Santa</b> y el <b>ciclismo.</b></p>
+
+    <h2>Aficiones</h2>
+    <table border="2" width="80%" >
+        <caption>Mis aficiones</caption>
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripción</th>
+                <th>Botón</th>
+            </tr>
+            <tr>
+        </thead>
+        <tbody>
+            <td>
+                <img src="https://www.bandamunicipaldearahal.com/wp-content/uploads/2018/02/MarchaBernal1.jpeg" width="295" height="196" alt="pasion">
+            </td>
+            <td>Una de mis mayores aficiones es la Semana Santa, soy hermano de la Archicofradía de la Pasión de Málaga y de la Cofradía de la Santa Vera+Cruz de Alhaurín el Grande
+            </td>
+            <td>
+                <a href="https://www.youtube.com/watch?v=a3CEM4IvVcQ" target="_black"><button type="button" name="botonPasion">Amor Doloroso 2023</button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2020/01/falsos-mitos-fotografia-equipo-camara-tripode-estabilidad-734x489.jpg" width="295" height="195" alt="fotografia">
+            </td>
+            <td>
+                Otra gran afición que tengo es la fotografía. Tengo una Canon1300D con un 18-55mm, un 50mm 1.8 y un 55-250mm 4.5.
+            </td>
+            <td>
+                <a href="https://www.canonistas.com/" target="_black"><button type="button" name="botonCanon">Canonistas</button></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://www.webconsultas.com/sites/default/files/styles/wch_image_schema/public/noticias/ciclismo_no_afecta_funcion_urinaria_ni_sexual.jpg" width="300" height="168" alt="ciclismo">
+            </td>
+            <td>
+                El ciclismo es una parte muy importante de mi vida. Llevo pranticandolo desde que tenía 8 años y a día de hoy sigo haciéndolo, tanto por montaña como por carretera.
+            </td>
+            <td>
+                <a href="https://www.marca.com/ciclismo.html" target="_black"><button type="button" name="botonCanon">Noticias Ciclismo</button></a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+    <h2>Ciudades que he visitado</h2>
+    <div id="ciudades">
+        <ul type="circle">
+            <a href="https://www.spain.info/es/destino/sevilla/" target="_self"><li>Sevilla</li></a>
+            <a href="https://www.turismodecordoba.org/" target="_self"><li>Córdoba</li></a>
+            <a href="https://www.spain.info/es/destino/toledo/" target="_self"><li>Toledo</li></a>
+        </ul>
+    </div>
+
+
+        <h2>Formulario</h2>
+        <fieldset>
+            <legend>Datos del Formulario</legend>
+            <label for="name">Nombre: </label>
+            <input id="name" name="nombre" value="Nombre" placeholder="Nombre" maxlength="200" type="text"></input>
+            <br /><br />
+            <label for="email">Email: </label>
+            <input id="email" name="correo" value="Correo" placeholder="Correo" type="email"></input>
+            <br /><br />
+         
+            <label for="file">Archivo: </label>
+            <input id="file" name="file" type="file"></input>
+            <br /><br />
+            
+            <label for="hermanos">Numero de herman@s: </label>
+            <input id="hermanos" name="hermanos" type="number"></input>
+            <br /><br />
+            <label for="password">Establezca una contraseña: </label>
+            <input id="password" name="contraseña" type="password"></input>
+            <br /><br />
+            <label for="telefono">Número de teléfono: </label>
+            <input id="telefono" name="telefono" type="tel"></input>
+            <br /><br />
+            
+            <label for="url">URL: </label>
+            <input id="url" name="url" type="url"></input>
+            <br /><br />
+            <label for="nationality">Nacionalidad: </label>
+            <select id="nationality" name="country">
+                <option selected value="spain">Española</option>
+                <option value="french">Francesa</option>
+                <option value="english">Inglesa</option>
+                <option value="italian">Italiana</option>
+            </select>
+          
+    
+        </fieldset>
+
+        <fieldset>
+            <legend>Fechas</legend>
+            <label for="birth">Fecha de nacimiento: </label>
+            <input id="birth" name="birth" type="date"></input>
+            <br /><br />
+            <label for="date">Fecha de ingreso: </label>
+            <input id="date" name="date" type="datetime-local"></input>
+            <br /><br />
+            <label for="month">Mes: </label>
+            <input id="month" name="month" type="month"></input>
+            <br /><br />
+            <label for="wek">Semana: </label>
+            <input id="week" name="week" type="week"></input>
+            <br /><br />
+            <label for="hora">Hora de la cita: </label>
+            <input id="hora" name="hora" type="time"></input>
+            <br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Información adicional</legend>
+            <label for="rango">Grado de satisfacción de la asignatura: </label>
+            <input id="rango" name="satisfaccion" value="satisfaccion" placeholder="satisfaccion" type="range"></input>
+            <br /><br />
+            <label for="infoInteres">Información de interés que quiera añadir</label>
+            <br>
+            <textarea id="infoInteres" rows="15" cols="60" maxlength="200" placeholder="Inserte aquí el texto"></textarea>
+            <br><br>
+           
+            <input type="checkbox" id="cbox1" value="accept" checked><label for="cbox1">Acepto
+                los términos y condiciones</label><br>
+    
+            <label>Género:</label><input id="nombre" type="radio" name="sexo" value="hombre" checked/>
+            <label for="hombre">Hombre</label><input id="mujer" type="radio" name="sexo" value="mujer"/>
+            <label for="mujer">Mujer</label><input id="nombre" type="radio" name="sexo" value="Otro"/>
+            <label for="otro">Otro</label>
+        </fieldset>
+
+
+
+
+
+        <button type="submit" name="botonEnviar" value="Enviar" disbled>Enviar</button>
+
+
+
+
+
+    
+</body>
+</html>
