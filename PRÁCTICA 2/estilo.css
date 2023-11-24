@@ -1,3 +1,18 @@
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url("./fonts/websymbols-regular-webfont.eot");
+    src: url("./fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("./fonts/websymbols-regular-webfont.ttf") format("truetype"),
+        url("./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;    
+}
+
+.icon {
+    font-family: "WebSymbolsRegular";
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,7 +20,92 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+article h4 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+article p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#banner{
+    width: 95.5%;
+    height: 100px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background: url("img/banner2.jpg");
+    background-position: -200px -200px;
+    margin: 20px auto;
+    animation: banner 10s linear;
+    -webkit-animation: banner 10s linear;
+    animation-iteration-count: infinite;
+}
+@keyframes banner{
+    from{
+        background-position: 0px 0px;
+    } to{
+        background-position: -200px -200px;
+    }
+}
+
+#banner h1{
+    display: block;
+    width: 850px;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px black;
+    margin: 27px auto;
+    animation: muestraTexto 10s linear;
+    -webkit-animation: muestraTexto 10s linear;
+}
+@keyframes muestraTexto{
+    0%{
+        transform: translateX(-600%) scale(3,3);
+        -webkit-transform: translateX(-600%) scale(3,3);
+        -moz-transform: translateX(-600%) scale(3,3);
+        -ms-transform: translateX(-600%) scale(3,3);
+        -o-transform: translateX(-600%) scale(3,3);
+        opacity: 1;
+    }50%{
+        transform: translateX(600%) scale(3,3);
+        -webkit-transform: translateX(600%) scale(3,3);
+        -moz-transform: translateX(600%) scale(3,3);
+        -ms-transform: translateX(600%) scale(3,3);
+        -o-transform: translateX(600%) scale(3,3);
+        opacity: 1;
+    }75%{
+        transform: translateX(-600%) scale(3,3);
+        -webkit-transform: translateX(-600%) scale(3,3);
+        -moz-transform: translateX(-600%) scale(3,3);
+        -ms-transform: translateX(-600%) scale(3,3);
+        -o-transform: translateX(-600%) scale(3,3);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }100%{
+        transform: translateX(0%) scale(1,1);
+        -webkit-transform: translateX(0%) scale(1,1);
+        -moz-transform: translateX(0%) scale(1,1);
+        -ms-transform: translateX(0%) scale(1,1);
+        -o-transform: translateX(0%) scale(1,1);
+        color:white;
+        opacity: 1;
+    }
+}
+
 .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style-type: none;
     background-color: black;
     padding: 2rem;
@@ -13,8 +113,6 @@
     font-size: 20px;
     position: sticky;
     top: 0px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .menu li a {
@@ -29,9 +127,86 @@
     padding: 2rem;
 }
 
+.idiomas {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #cards {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+
+#c1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#c2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#c3 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.articulos {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#tituloArticulos {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#a1 {
+    grid-row: 2;
+    grid-column: 2;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #156785;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#a2 {
+    grid-row: 3;
+    grid-column: 2;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #156785;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#a3 {
+    grid-row: 4;
+    grid-column: 2;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #156785;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+audio{
+    width: 90%;
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+
+video {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 2%;
+}
+
+#general {
+    display: grid;
+    grid-template-columns: 80% 18%;
 }
 
 footer {
