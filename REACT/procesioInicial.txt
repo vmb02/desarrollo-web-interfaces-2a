@@ -1,0 +1,10 @@
+-Extensiones
+-NodeJS
+*node --version
+*npm --version
+
+Para crear un proyecto vamos a poder realizarlo
+1 -Create React App
+2 -Vite
+
+Crear proyecto
