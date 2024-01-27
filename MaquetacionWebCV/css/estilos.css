@@ -49,7 +49,23 @@ form, input, select, textarea, button, label{
  definimos familia de fuente que voy a utilizar */
 :root{
     --color-principal: #FFFFFF;
-    --color-secondary: #04B4E0;
+    --color-secondary: #ffa410;
+
+    --color-background: #fde8c7;
+    --color-transparent: transparent;
+
+    --color-icons: #B5B6B7;
+    --color-title: #222222;
+    --color-subtitle: #888;
+    --color-text: #555;
+
+    --color-border-reviews: #E5E6E7;
+    --color-company: #A5A6A7;
+}
+/* toogle.js */
+.tema-oscuro{
+    --color-principal: #FFFFFF;
+    --color-secondary: #005f30;
 
     --color-background: #F2F7F9;
     --color-transparent: transparent;
@@ -597,10 +613,10 @@ body{
 .clients_link:hover{
     opacity: 1;
     transform: scale(1.1,1.1);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
+    -webkit-transform:scale(1.1,1.1);
+    -moz-transform:scale(1.1,1.1);
+    -ms-transform:scale(1.1,1.1);
+    -o-transform:scale(1.1,1.1);
 }
 .clients__image{
     width: 200px;
