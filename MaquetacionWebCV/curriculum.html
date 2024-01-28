@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">    
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/toogle.js"></script>
     
     <title>Maquetación Proyecto CV</title>
 </head>
@@ -92,6 +95,9 @@
                         </li>
                     </ul>
                 </div>
+                <div class="boton">
+                    <input id="theme" type="checkbox" class="theme-checkbox">
+                </div>
 
                 <!-- botón del curriculum -->
                 <div class="user-info__buttons">
@@ -120,25 +126,37 @@
                         <div class="resume__timelines">
                             <article class="timelines__timeline">
                                 <header class="timeline__header">
-                                    <h4 class="timeline_year">2022</h4>
-                                    <span class="timeline__company">Universidad Alfonso X</span>
+                                    <h4 class="timeline_year">2023</h4>
+                                    <span class="timeline__company">Medac</span>
                                 </header>
                                 <div class="timeline__divider">
                                 </div>
                                 <div class="timeline__description">
-                                    <h3 class="timeline__title">MÁSTER UNIVERSITARIO EN FORMACIÓN DEL PROFESORADO DE EDUCACIÓN SECUNDARIA OBLIGATORIA Y BACHILLERATO, FORMACIÓN PROFESIONAL Y ENSEÑANZAS DE IDIOMAS</h3>
+                                    <h3 class="timeline__title">Grado Superior en Desarrollo de Aplicaciones Web</h3>
                                     <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
                                 </div>
                             </article>
                             <article class="timelines__timeline">
                                 <header class="timeline__header">
-                                    <h4 class="timeline_year">1995</h4>
-                                    <span class="timeline__company">Universidad de Málaga</span>
+                                    <h4 class="timeline_year">2020</h4>
+                                    <span class="timeline__company">IES Antonio Gala</span>
                                 </header>
                                 <div class="timeline__divider">
                                 </div>
                                 <div class="timeline__description">
-                                    <h3 class="timeline__title">ETSI Ingeniería Técnica Informática de Sistemas</h3>
+                                    <h3 class="timeline__title">Bachillerato Tecnológico</h3>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
+                                </div>
+                            </article>
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline_year">2018</h4>
+                                    <span class="timeline__company">IES Antonio Gala</span>
+                                </header>
+                                <div class="timeline__divider">
+                                </div>
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">ESO</h3>
                                     <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
                                 </div>
                             </article>
@@ -150,7 +168,7 @@
                         <div class="resume__timelines">
                             <article class="timelines__timeline">
                                 <header class="timeline__header">
-                                    <h4 class="timeline_year">2023-Actualidad</h4>
+                                    <h4 class="timeline_year">2022-Estudiante</h4>
                                     <span class="timeline__company">MEDAC</span>
                                 </header>
                                 <div class="timeline__divider">
@@ -162,13 +180,25 @@
                             </article>
                             <article class="timelines__timeline">
                                 <header class="timeline__header">
-                                    <h4 class="timeline_year">2001-2023</h4>
-                                    <span class="timeline__company">DEKRA</span>
+                                    <h4 class="timeline_year">2021-Actualidad</h4>
+                                    <span class="timeline__company">Alhaurín Sistemas</span>
                                 </header>
                                 <div class="timeline__divider">
                                 </div>
                                 <div class="timeline__description">
-                                    <h3 class="timeline__title">Jefe de Unidad</h3>
+                                    <h3 class="timeline__title">Fotógrafo</h3>
+                                    <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
+                                </div>
+                            </article>
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline_year">2021-2022</h4>
+                                    <span class="timeline__company">Café Bolín</span>
+                                </header>
+                                <div class="timeline__divider">
+                                </div>
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Camarero</h3>
                                     <p class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nihil fuga harum ut, recusandae saepe natus.</p>
                                 </div>
                             </article>
@@ -201,14 +231,14 @@
                                 <div class="skills__percentage skills__percentage--p3"></div>
                             </div>
                             <article class="skills__title">
-                                <h4 class="skills__text">Diseño Banners</h4>
+                                <h4 class="skills__text">Diseño Marcas</h4>
                                 <span class="skills__number">80%</span>
                             </article>
                             <div class="skills__progressbar">
                                 <div class="skills__percentage skills__percentage--p4"></div>
                             </div>
                             <article class="skills__title">
-                                <h4 class="skills__text">Edición de Videos</h4>
+                                <h4 class="skills__text">Edición de Fotos</h4>
                                 <span class="skills__number">60%</span>
                             </article>
                             <div class="skills__progressbar">
@@ -228,7 +258,7 @@
                                 <div class="skills__percentage skills__percentage--p6"></div>
                             </div>
                             <article class="skills__title">
-                                <h4 class="skills__text">Typescript</h4>
+                                <h4 class="skills__text">PHP</h4>
                                 <span class="skills__number">80%</span>
                             </article>
                             <div class="skills__progressbar">
@@ -256,9 +286,10 @@
                             <ul class="knowledges__list">
                                 <li class="knowledges_option">Programación</li>
                                 <li class="knowledges_option">Desarrollo web</li>
-                                <li class="knowledges_option">Diseño web</li>
+                                <li class="knowledges_option">Diseño de Interfaces</li>
                                 <li class="knowledges_option">Bases de datos</li>
-                                <li class="knowledges_option">Formación</li>
+                                <li class="knowledges_option">Sistemas informáticos</li>
+                                <li class="knowledges_option">Empresa</li>
                             </ul>
                         </div>
                     </section>
